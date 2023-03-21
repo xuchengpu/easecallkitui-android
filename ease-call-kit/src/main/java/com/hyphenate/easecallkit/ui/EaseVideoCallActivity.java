@@ -1,10 +1,11 @@
 package com.hyphenate.easecallkit.ui;
 
 import static com.hyphenate.easecallkit.utils.EaseMsgUtils.CALL_INVITE_EXT;
-import static io.agora.rtc2.Constants.CHANNEL_PROFILE_LIVE_BROADCASTING;
-import static io.agora.rtc2.Constants.CLIENT_ROLE_BROADCASTER;
-import static io.agora.rtc2.Constants.REMOTE_VIDEO_STATE_REASON_REMOTE_MUTED;
-import static io.agora.rtc2.Constants.REMOTE_VIDEO_STATE_STOPPED;
+
+import static io.agora.rtc.Constants.CHANNEL_PROFILE_LIVE_BROADCASTING;
+import static io.agora.rtc.Constants.REMOTE_VIDEO_STATE_REASON_REMOTE_MUTED;
+import static io.agora.rtc.Constants.REMOTE_VIDEO_STATE_STOPPED;
+import static io.agora.rtc.IRtcEngineEventHandler.ClientRole.CLIENT_ROLE_BROADCASTER;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -80,7 +81,6 @@ import com.hyphenate.easecallkit.widget.EaseImageView;
 import com.hyphenate.easecallkit.widget.MyChronometer;
 import com.hyphenate.util.EMLog;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -94,10 +94,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
-import io.agora.rtc2.IRtcEngineEventHandler;
-import io.agora.rtc2.RtcEngine;
-import io.agora.rtc2.video.VideoCanvas;
-import io.agora.rtc2.video.VideoEncoderConfiguration;
+import io.agora.rtc.IRtcEngineEventHandler;
+import io.agora.rtc.RtcEngine;
+import io.agora.rtc.video.VideoCanvas;
+import io.agora.rtc.video.VideoEncoderConfiguration;
 
 
 /**

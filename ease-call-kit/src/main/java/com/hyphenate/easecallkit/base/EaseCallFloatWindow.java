@@ -1,5 +1,7 @@
 package com.hyphenate.easecallkit.base;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
@@ -23,16 +25,13 @@ import com.hyphenate.easecallkit.EaseCallKit;
 import com.hyphenate.easecallkit.R;
 import com.hyphenate.easecallkit.ui.EaseBaseCallActivity;
 import com.hyphenate.easecallkit.utils.EaseCallKitUtils;
-
 import com.hyphenate.easecallkit.widget.MyChronometer;
 import com.hyphenate.util.EMLog;
 
 import java.util.Map;
 
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-
-import io.agora.rtc2.RtcEngine;
-import io.agora.rtc2.video.VideoCanvas;
+import io.agora.rtc.RtcEngine;
+import io.agora.rtc.video.VideoCanvas;
 
 
 /**
